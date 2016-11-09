@@ -1,0 +1,38 @@
+select,#totnum{
+	width: 200px;
+	height: 50px;
+	font-size: 48;
+
+}
+#mainbtn{
+	position:absolute;
+	bottom:0;
+	right:0;
+	width: 200px;
+	height:50px;
+
+}
+#form1{
+	margin-top:50px;
+}
+.rollbtn{
+	background-color:green;
+	margin: 2px;
+	height: 50px;
+	width:50px;
+	color: white;
+}
+#finish{
+	visibility:hidden;
+	width: 200px;
+	height:50px;
+	
+
+}
+#head1{
+	visibility: hidden;
+}
+
+#mainbody{
+	margin-left:20px;
+}
