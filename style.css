@@ -1,31 +1,99 @@
 select,#totnum{
-	width: 200px;
-	height: 50px;
+	width: 100%;
+	height: 40px;
 	font-size: 48;
 
 }
+body{
+	margin: 0px;
+	border: 0px;
+}
+#main_btn_text{
+	margin-bottom: 4px: 
+	font-size: 48px;
+}
+#index_body{
+	background-color: #4db6ac;
+
+}
+
 #mainbtn{
 	position:absolute;
-	bottom:0;
-	right:0;
-	width: 200px;
-	height:50px;
+	bottom:30px;
+	right:30px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 56px;
+	padding-bottom:5px;
 
+	/*width: 200px;
+	height:50px;*/
+
+}
+body {
+font-family: 'Roboto', sans-serif;
+
+}
+#headindex1{
+	margin-top:50px;
+	font-size: 48px;
+	line-height: 56px;
+}
+#headindex2{
+	font-size: 24px;
+	line-height: 48px;
+}
+#heading_container{
+font-family: 'Roboto', sans-serif;
+font-weight: 100;
+
+	color: white;
+	text-align: center;
+	background-color: #4db6ac;
+	width: 100%;
+	height: 100%;
+}
+#success{
+	color: white;
+	text-align: center;
+}
+.navbar1{
+	 direction: ltr;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+
+}
+
+.demo-card-wide.mdl-card {
+  width: 512px;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('cet.jpeg') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+#seat{
+	margin: 10px;
 }
 #form1{
 	margin-top:50px;
 }
 .rollbtn{
-	background-color:green;
-	margin: 2px;
+	margin: 2px!important;
 	height: 50px;
 	width:50px;
 	color: white;
 }
 #finish{
 	visibility:hidden;
-	width: 200px;
+	width: 100%;
 	height:50px;
+	margin-left: auto;
+	margin-right: auto;
 	
 
 }
@@ -34,5 +102,6 @@ select,#totnum{
 }
 
 #mainbody{
-	margin-left:20px;
+	margin-left:0px;
 }
+#showroll{

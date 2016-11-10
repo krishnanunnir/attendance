@@ -5,7 +5,7 @@
 	var target_div="#seat";
     var buttons="",i;
     for ( i=0; i<num_buttons; i++ ) {
-        buttons += '<input type="button" id="button_'+i+'" class="rollbtn" value="'+(i+1)+'"></input>';
+        buttons += '<input type="button" id="button_'+i+'" class="rollbtn mdl-button mdl-js-button mdl-button--raised mdl-button--colored" value="'+(i+1)+'"></input>';
     }
     $(target_div).append( buttons );
     var doButtonPress = function( i ) {
@@ -24,9 +24,9 @@
 
 function absentees(){
 
-  var rollabsent="<h1>Absentees</h1><h3>"+absent1.toString()+"</h3>";
+  var rollabsent="<div id='success'><h4>The absentees are "+absent1.toString()+"</h4></div>";
   //alert(rollabsent);
-  $("#absentroll").append(rollabsent);
+  $("body").append(rollabsent);
 
 }
 //var lastpage=location.href='./markatt.html';
@@ -34,9 +34,10 @@ $(document).ready(function() {
     $('#showroll').click(function() {
       $("#form1").hide();
       $("#finish").css("visibility","visible");
-
       total=$('#totnum').val();
-      //window.location.href = "markatt.html";
+
+
+
       myFunc(total);
       });
     
@@ -45,6 +46,8 @@ $(document).ready(function() {
     $(".rollbtn").hide();
            $("#finish").hide();
            $("absentroll").show();
+           $("body").css("background-color","#4db6ac");
+           $("body").append("<div id='success'><h1 id='success'>Success</h1><h4>Congratulations... you have successfully submitted your attendance.</h4>");
            absentees();
 
 

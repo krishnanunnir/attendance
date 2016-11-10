@@ -1,51 +1,139 @@
 	<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
+	<html>
+	<head>
+		<title></title>
+	</head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
-	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-<body id="mainbody">
-<center>
-<table frame="box" id="form1" action="">
-		<tr><td><select>
-			<option value="NULL" >Select Course</option>
-			<option value="btech" >B.Tech</option>
-			<option value="mtech" >M.Tech</option>
-			<option value="mca" >MCA</option>
-			<option value="mba" >MBA</option>
-		</select></td></tr>
-		<tr><td><select>
-			<option value="NULL" >Select Branch</option>
-			<option value="m1" >M1</option>
-			<option value="m2" >M2</option>
-			<option value="r1" >R1</option>
-		</select></td></tr>
-	<tr><td><select>
-			<option value="NULL" >Select Year</option>
-			<option value="1" >First</option>
-			<option value="2" >Second</option>
-			<option value="3" >Third</option>
-			<option value="4" >Fourth</option>
-		</select></td></tr>
-		<tr><td><input id="totnum" type="text" name="totnum" placeholder="Strength"></td></tr>
-		<tr><td>
-			<button type="submit" id="showroll">Submit</button>
-		</td></tr>
-		</table>
-		</center>
-		<h1 id="head1">Roll Numbers</h1>
-		<div class="row" id="seat">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue-pink.min.css" />
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<body id="mainbody">
+	<div class="mdl-layout mdl-js-layout ">
+<header class="mdl-layout__header">
+	<div class="mdl-layout-icon"></div>
+	<div class="mdl-layout__header-row">
+		<span class="mdl-layout__title">e-Attendance</span>
+		<div class="mdl-layout-spacer">
+			<nav class="mdl-navigation navbar1">
+			       			<a class="mdl-navigation__link" href="index.html">Home</a>
+
+       			<a class="mdl-navigation__link" href="#">Admin</a>
+        		<a class="mdl-navigation__link" href="#">CET</a>
+        		<a class="mdl-navigation__link" href="#">Report a problem</a>
+			</nav>
 		</div>
+
+	</div>
+</header>
+<div class="mdl-layout__drawer">
+	<span class="mdl-layout__title">e-Attendance</span>
+	<nav class="mdl-navigation navbar1">
+			       			<a class="mdl-navigation__link" href="index.html">Home</a>
+
+     	<a class="mdl-navigation__link" href="#">Admin</a>
+        		<a class="mdl-navigation__link" href="#">CET</a>
+        		<a class="mdl-navigation__link" href="#">Report a problem</a>
+    </nav>
+</div>
+	</div>	
+		<div class="mdl-grid">
+			<div class="mdl-cell mdl-cell-1-col mdl-cell--1-col-phone"></div>
+			<div class="mdl-cell mdl-cell-10-col mdl-cell--10-col-phone">	
+				<table class="mdl-data-table mdl-js-data-table" id="form1">
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="mdl-data-table__cell--non-numeric"><select>
+								<option value="NULL" >Select Course</option>
+								<option value="btech" >B.Tech</option>
+								<option value="mtech" >M.Tech</option>
+								<option value="mca" >MCA</option>
+								<option value="mba" >MBA</option>
+							</select></td>
+						</tr>
+						<tr>
+							<td class="mdl-data-table__cell--non-numeric"><select>
+								<option value="NULL" >Select Branch</option>
+								<option value="m1" >M1</option>
+								<option value="m2" >M2</option>
+								<option value="r1" >R1</option>
+							</select></td>
+						</tr>
+						<tr>
+							<td class="mdl-data-table__cell--non-numeric"><select>
+								<option value="NULL" >Select Year</option>
+								<option value="1" >First</option>
+								<option value="2" >Second</option>
+								<option value="3" >Third</option>
+								<option value="4" >Fourth</option>
+							</select></td>
+
+						</tr>
+						<tr>
+							<td>
+								<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+									<input class="mdl-textfield__input" pattern="-?[0-9]*(\.[0-9]+)?" id="totnum" type="text" name="totnum" placeholder="Strength">
+									<label class="mdl-textfield__label" for="sample4"></label>
+									<span class="mdl-textfield__error">Input is not a number!</span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<!-- Accent-colored raised button -->
+								<div style="width:100%">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="showroll">
+									Submit
+								</button>
+								</div>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="mdl-cell mdl-cell-1-col mdl-cell--1-col-phone"></div>
+
+
+		</div>
+		<div class="mdl-grid">
+			<div class="mdl-cell mdl-cell-1-col mdl-cell--1-col-phone"></div>
+
+			<div class="row" id="seat" class="mdl-cell mdl-cell-10-col mdl-cell--10-col-phone">
+
+
+			</div>
+			<div class="mdl-cell mdl-cell-1-col mdl-cell--1-col-phone"></div>
+
+		</div>
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="finish">
+			Submit
+		</button>
+
 		<button id="finish">finish</button>
 		<div id="absentroll"></div>
 
+	</div>
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
-			  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-			  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
 <script type="text/javascript" src="script.js">
 // function b_onclick() 
 // {

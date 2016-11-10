@@ -2,16 +2,76 @@
 <html>
 <head>
 	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
-<body><center>
-<h1>E-Attendance Register</h1>
-<h2>CET</h2>	
-<button onclick="return b_onclick(); " id="mainbtn" style=""><a href="./attendance.html">enter attendance</a></button>
-</center>
+
+<body id="index_body">
+<div class="mdl-layout mdl-js-layout ">
+<header class="mdl-layout__header">
+	<div class="mdl-layout-icon"></div>
+	<div class="mdl-layout__header-row">
+		<span class="mdl-layout__title">e-Attendance</span>
+		<div class="mdl-layout-spacer">
+			<nav class="mdl-navigation navbar1">
+			<a class="mdl-navigation__link" href="index.html">Home</a>
+
+       			<a class="mdl-navigation__link" href="#">Admin</a>
+        		<a class="mdl-navigation__link" href="#">CET</a>
+        		<a class="mdl-navigation__link" href="#">Report a problem</a>
+			</nav>
+		</div>
+
+	</div>
+</header>
+<div class="mdl-layout__drawer">
+	<span class="mdl-layout__title">e-Attendance</span>
+	<nav class="mdl-navigation navbar1">
+  <a class="mdl-navigation__link" href="index.html">Home</a>
+
+     	<a class="mdl-navigation__link" href="#">Admin</a>
+        		<a class="mdl-navigation__link" href="#">CET</a>
+        		<a class="mdl-navigation__link" href="#">Report a problem</a>
+    </nav>
+</div>
+	</div>	
+	<br/>
+
+<div id="heading_container">
+
+	<p id="headindex1">Attendance Register</p>
+<p id="headindex2">College of Engineering Trivandrum</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Colored FAB button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" id="mainbtn" onclick="return b_onclick();">
+  <i class="material-icons">add</i>
+</button>
+
+
 </body>
 </html>
+<script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+
 <script type="text/javascript">
 function b_onclick() 
 {
