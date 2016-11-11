@@ -3,7 +3,7 @@
     var absent1=[];
     function myFunc(num_buttons) {
 	var target_div="#seat";
-    var buttons="",i;
+    var buttons="<p id='rollnumhead'>Roll Numbers</p>",i;
     for ( i=0; i<num_buttons; i++ ) {
         buttons += '<input type="button" id="button_'+i+'" class="rollbtn mdl-button mdl-js-button mdl-button--raised mdl-button--colored" value="'+(i+1)+'"></input>';
     }
@@ -45,9 +45,11 @@ $(document).ready(function() {
       //alert(absent1);
     $(".rollbtn").hide();
            $("#finish").hide();
+                      $("#rollnumhead").hide();
+
            $("absentroll").show();
            $("body").css("background-color","#4db6ac");
-           $("body").append("<div id='success'><h1 id='success'>Success</h1><h4>Congratulations... you have successfully submitted your attendance.</h4>");
+           $("body").append("<div id='success'><h1 id='success'>Success</h1><h4>You have successfully submitted your attendance.</h4>");
            absentees();
 
 
